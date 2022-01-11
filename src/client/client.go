@@ -166,7 +166,7 @@ func main() {
 		// automatically allocate clients equally
 		leader := 0
 		if *singleClusterTest {
-			leader = i % 3
+			leader = i % 5
 		}
 
 		//server, err := net.Dial("tcp", rlReply.ReplicaList[leader])
@@ -192,7 +192,7 @@ func main() {
 	}
 
 	if *singleClusterTest {
-		printerMultipeFile(readings, 3, experimentStart, rampDown, rampUp, timeout)
+		printerMultipeFile(readings, 5, experimentStart, rampDown, rampUp, timeout)
 	} else {
 		printer(readings)
 	}
