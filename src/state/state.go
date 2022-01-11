@@ -86,6 +86,70 @@ type Command struct {
 	V29      Value
 	K30      Key
 	V30      Value
+	K31      Key
+	V31      Value
+	K32      Key
+	V32      Value
+	K33      Key
+	V33      Value
+	K34      Key
+	V34      Value
+	K35      Key
+	V35      Value
+	K36      Key
+	V36      Value
+	K37      Key
+	V37      Value
+	K38      Key
+	V38      Value
+	K39      Key
+	V39      Value
+	K40      Key
+	V40      Value
+	K41      Key
+	V41      Value
+	K42      Key
+	V42      Value
+	K43      Key
+	V43      Value
+	K44      Key
+	V44      Value
+	K45      Key
+	V45      Value
+	K46      Key
+	V46      Value
+	K47      Key
+	V47      Value
+	K48      Key
+	V48      Value
+	K49      Key
+	V49      Value
+	K50      Key
+	V50      Value
+	K51      Key
+	V51      Value
+	K52      Key
+	V52      Value
+	K53      Key
+	V53      Value
+	K54      Key
+	V54      Value
+	K55      Key
+	V55      Value
+	K56      Key
+	V56      Value
+	K57      Key
+	V57      Value
+	K58      Key
+	V58      Value
+	K59      Key
+	V59      Value
+	K60      Key
+	V60      Value
+	K61      Key
+	V61      Value
+	K62      Key
+	V62      Value
 	OldValue Value
 }
 
@@ -205,6 +269,38 @@ func (c *Command) Execute(st *State) Value {
 		st.Store[c.K28] = c.V28
 		st.Store[c.K29] = c.V29
 		st.Store[c.K30] = c.V30
+		st.Store[c.K31] = c.V31
+		st.Store[c.K32] = c.V32
+		st.Store[c.K33] = c.V33
+		st.Store[c.K34] = c.V34
+		st.Store[c.K35] = c.V35
+		st.Store[c.K36] = c.V36
+		st.Store[c.K37] = c.V37
+		st.Store[c.K38] = c.V38
+		st.Store[c.K39] = c.V39
+		st.Store[c.K40] = c.V40
+		st.Store[c.K41] = c.V41
+		st.Store[c.K42] = c.V42
+		st.Store[c.K43] = c.V43
+		st.Store[c.K44] = c.V44
+		st.Store[c.K45] = c.V45
+		st.Store[c.K46] = c.V46
+		st.Store[c.K47] = c.V47
+		st.Store[c.K48] = c.V48
+		st.Store[c.K49] = c.V49
+		st.Store[c.K50] = c.V50
+		st.Store[c.K51] = c.V51
+		st.Store[c.K52] = c.V52
+		st.Store[c.K53] = c.V53
+		st.Store[c.K54] = c.V54
+		st.Store[c.K55] = c.V55
+		st.Store[c.K56] = c.V56
+		st.Store[c.K57] = c.V57
+		st.Store[c.K58] = c.V58
+		st.Store[c.K59] = c.V59
+		st.Store[c.K60] = c.V60
+		st.Store[c.K61] = c.V61
+		st.Store[c.K62] = c.V62
 		return c.V
 
 	case GET:
