@@ -477,6 +477,7 @@ func (e *EPaxosRMWHandler) HandleRMW(rmw *gryffproto.RMW) {
 				rmw.K,
 				rmw.NewValue,
 				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 				rmw.OldValue,
 			},
 			0,

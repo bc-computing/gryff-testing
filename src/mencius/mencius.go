@@ -467,7 +467,7 @@ func (r *Replica) handlePrepare(prepare *menciusproto.Prepare) {
 			FALSE,
 			0,
 			//state.Command{state.NONE, 0, 0, 0}})
-			state.Command{state.NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}})
+			state.Command{state.NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}})
 
 		r.instanceSpace[prepare.Instance] = &Instance{false,
 			0,
@@ -482,7 +482,7 @@ func (r *Replica) handlePrepare(prepare *menciusproto.Prepare) {
 		}
 		if inst.command == nil {
 			//inst.command = &state.Command{state.NONE, 0, 0, 0}
-			inst.command = &state.Command{state.NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+			inst.command = &state.Command{state.NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 		}
 		skipped := FALSE
 		if inst.skipped {
@@ -888,7 +888,7 @@ func (r *Replica) forceCommit() {
 			r.instanceSpace[problemInstance] = &Instance{true,
 				NB_INST_TO_SKIP,
 				//&state.Command{state.NONE, 0, 0, 0},
-				&state.Command{state.NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+				&state.Command{state.NONE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 				r.makeUniqueBallot(1),
 				PREPARING,
 				&LeaderBookkeeping{nil, 0, 0, 0, 0}}
